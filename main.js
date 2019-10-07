@@ -1,5 +1,5 @@
-// const profile = require('profile1920.js');
-// const robot = require('robot.js');
+ const profile = require('profile1920.js');
+ const robot = require('robot.js');
 const DEVICE = require('device.js');
 const PLAY = require('play.js').mp;
 const PLAY2 = require('play.js').mp2;
@@ -97,7 +97,7 @@ for (;;counterMP++) {
         nowTime = new Date().getTime();
         toastLog("倒计时："+(interval*60000 - (nowTime-startTime))/60000);
         if ((nowTime - startTime) > (interval*60000)) {
-            // toastLog(nowTime+"-"+startTime+"="+(nowTime-startTime));
+             toastLog(nowTime+"-"+startTime+"="+(nowTime-startTime));
             // start carHunt
             for ( let i = 0; i < 5; i++ ) {
                 carHunt.beforeRun(position);
