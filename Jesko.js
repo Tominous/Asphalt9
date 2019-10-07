@@ -7,7 +7,7 @@ var counterMP = 0;
 
 DEVICE.checkPermission();
 DEVICE.setEventListener();
-//DEVICE.savePower();
+DEVICE.savePower();
 
 /* times of running */
 var times = 8;
@@ -113,7 +113,7 @@ function beforeRun() {
 
     while (!Flag){
         var chStatus = chCheckState();
-/*        
+        
         if (chStatus != -1) {
             timer = new Date().getTime();
         }
@@ -125,7 +125,7 @@ function beforeRun() {
                 restart();
             }
         }
-*/        
+        
         switch(chStatus){
             // error
             case -2: {
@@ -204,7 +204,7 @@ function run(counter_mp) {
                 robot.click(profile.mp.width * 3 / 10, profile.mp.height / 2);
             }
             sleep(950);
-            // toastLog("isNext ?= " + checkState());
+             toastLog("isNext ?= " + checkState());
         }
     }
     toastLog(++counter_mp + "completed.");
