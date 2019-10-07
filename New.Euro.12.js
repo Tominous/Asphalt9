@@ -1,5 +1,5 @@
-// const profile = require('profile1920.js');
-// const robot = require('robot.js');
+ const profile = require('profile1920.js');
+ const robot = require('robot.js');
 const DEVICE = require('device.js');
 const PLAY = require('play.js').carrer;
 
@@ -9,7 +9,7 @@ toast("开局可能会弹广告,请自己手动关掉,直至保证程序正常�
 sleep(3000);
 DEVICE.checkPermission();
 DEVICE.setEventListener();
-// DEVICE.savePower();
+ DEVICE.savePower();
 var counterCarrer = 0;
 
 while(true) {
